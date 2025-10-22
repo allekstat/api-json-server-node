@@ -1,7 +1,7 @@
 import { ENDPOINT } from '../constants.js';
-function update_document(id, document = {})
+async function update_document(id = '', document = {})
 {
-    const response = fetch(`${ENDPOINT}/${id}`, {method: 'PATCH', body: JSON.stringify(document)});
-    response.then(r => console.log(`status: ${r.status} ${r.statusText}`));
+    const response = await fetch(`${ ENDPOINT }/${ id }`, { method: 'PATCH', body: JSON.stringify(document) });
+    return { status: response.status, statusText: response.statusText };
 }
 export default update_document;

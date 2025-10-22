@@ -1,7 +1,7 @@
 import { ENDPOINT } from '../constants.js';
-function delete_document(id)
+async function delete_document(id = '')
 {
-    const response = fetch(`${ENDPOINT}/${id}`, {method: 'DELETE'});
-    response.then(r => console.log(`status: ${r.status} ${r.statusText}`));
+    const response = await fetch(`${ ENDPOINT }/${ id }`, { method: 'DELETE' });
+    return { status: response.status, statusText: response.statusText };
 };
 export default delete_document;

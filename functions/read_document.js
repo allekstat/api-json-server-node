@@ -1,8 +1,8 @@
 import { ENDPOINT } from '../constants.js';
-function read_document(id = '')
+async function read_document(id = '')
 {
-    const response = fetch(`${ENDPOINT}/?id=${id}`, {method: 'GET'});
-    const list = response.then(r => r.json());
-    list.then(l => console.log(l));
+    const response = await fetch(`${ ENDPOINT }/${ id }`, { method: 'GET' });
+    const documents = await response.json();
+    return { status: response.status, statusText: response.statusText, result: documents };
 };
 export default read_document;

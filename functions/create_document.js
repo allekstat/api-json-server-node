@@ -1,7 +1,7 @@
 import { ENDPOINT } from '../constants.js';
-function create_document(document = {})
+async function create_document(document = {})
 {
-    const response = fetch(ENDPOINT, {method: 'POST', body: JSON.stringify(document)});
-    response.then(r => console.log(`status: ${r.status} ${r.statusText}`));
+    const response = await fetch(ENDPOINT, { method: 'POST', body: JSON.stringify(document) });
+    return { status: response.status, statusText: response.statusText };
 };
 export default create_document;
