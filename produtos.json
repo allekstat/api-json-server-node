@@ -1,0 +1,48 @@
+{
+  "produtos": [
+    {
+      "id": "2",
+      "nome": "xiaomi mi 14",
+      "valor": 8000
+    },
+    {
+      "id": "3",
+      "nome": "samsung galaxy s24",
+      "valor": 12000
+    },
+    {
+      "id": "4",
+      "nome": "asus rog phone 7",
+      "valor": 9000
+    },
+    {
+      "id": "5",
+      "nome": "xaomi redmi 12",
+      "valor": 1970
+    },
+    {
+      "id": "6",
+      "nome": "motorola edge 40",
+      "valor": 1999
+    },
+    {
+      "id": "7",
+      "nome": "galaxy s24",
+      "valor": 6979
+    },
+    {
+      "id": "8",
+      "nome": "iphone 13",
+      "valor": 3500
+    },
+    {
+      "id": "1",
+      "nome": "redemcao 13pt",
+      "valor": 10
+    },
+    {
+      "nome": "novo documento",
+      "id": "f064"
+    }
+  ]
+}
