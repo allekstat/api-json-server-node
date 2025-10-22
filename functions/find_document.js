@@ -1,7 +1,7 @@
-import { ENDPOINT } from '../constants.js';
+import {ENDPOINT} from '../constants.js';
 async function find_document(query)
 {
-    const response = await fetch(ENDPOINT, { method: 'GET' });
+    const response = await fetch(ENDPOINT, {method: 'GET'});
     const documents = await response.json();
     const matches = documents.filter(function (item)
     {
@@ -10,6 +10,6 @@ async function find_document(query)
                 return false;
         return true;
     });
-    return { status: response.status, statusText: response.statusText, result: matches };
+    return {status: response.status, statusText: response.statusText, result: matches};
 };
 export default find_document;

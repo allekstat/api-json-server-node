@@ -4,4 +4,4 @@ import update_document from './functions/update_document.js';
 import delete_document from './functions/delete_document.js';
 import replace_document from './functions/replace_document.js';
 import find_document from './functions/find_document.js';
-export { create_document, read_document, update_document, delete_document, replace_document, find_document };
+export {create_document, read_document, update_document, delete_document, replace_document, find_document};
